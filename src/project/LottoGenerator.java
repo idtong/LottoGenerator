@@ -10,8 +10,10 @@ public class LottoGenerator {
         int[] result = new int[6];
         
         for (int i=0;i<6;i++){
+            // 이미 있는 숫자이면 제외  
             result[i] = random.nextInt(45)+1;
         }
+        
         
         return result;
     }
